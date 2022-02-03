@@ -1,0 +1,29 @@
+<script>
+    let peso = 133.5; // peso em kg. Observe o uso de "." para fração
+    let altura = 1.77; // altura em metros, também como fração
+
+    imc = peso / altura ** 2;
+    //cálculo do IMC => peso divido pela atura ao quadrado.
+    
+    //tarefa: exibir uma mensagem da classificação correspondente ao imc
+    /*
+    menor que 18.5    Magreza
+    entre 18.5 e 24.9 Normal
+    entre 25 e 29.9   Sobrepeso
+    entre 30 e 39.9   Obesidade
+    maior que 40      Obesidade grave
+    */
+    
+    if (imc < 18.5) {
+        alert("Magreza");
+    } else if (imc < 25) {
+        alert("Normal");
+    } else if (imc < 30) {
+        alert("Sobrepeso");
+    } else if (imc < 40) {
+        alert("Obesidade");
+    } else {
+        alert("Obesidade grave");
+    }
+
+</script>
