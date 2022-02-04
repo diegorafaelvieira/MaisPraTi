@@ -1,0 +1,21 @@
+<script>
+
+    let n1 = parseInt(prompt("Digite o 1º valor: "));
+    let n2 = parseInt(prompt("Digite o 2º valor: "));
+    let calculo = prompt("Informe o tipo de cálculo: (+)Somar, (-)Subtrair, (*)Multiplicar, (/)Divisão ou (**)Potenciação:")
+
+    if (calculo == "+") {
+        calculo = n1 + n2;  
+    } else if (calculo == "-") {
+        calculo = n1 - n2;
+    } else if (calculo == "*") {
+        calculo = n1 * n2;
+    } else if (calculo == "/") {
+        calculo = n1 / n2;
+    } else if (calculo == "**") {
+        calculo = n1 ** n2;
+    }
+
+    alert(calculo);
+
+</script>
