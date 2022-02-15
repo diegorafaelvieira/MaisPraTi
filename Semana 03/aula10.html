@@ -1,0 +1,43 @@
+<script>
+    let acumulador = 0;
+    let entrada = 1;
+    let operacao = '';
+
+    while (operacao != "s") {
+        entrada = parseInt(prompt("Informe um valor: "));
+        operacao = prompt("Informe o tipo de cálculo: (+)Somar, (-)Subtrair, (*)Multiplicar, (/)Divisão ou (**)Potenciação o (s) para sair");
+
+        switch (operacao) {
+            case "+":
+                acumulador += entrada;
+                break;
+            
+            case "-":
+                acumulador -= entrada;
+                break;
+
+            case "*":
+                acumulador *= entrada;
+                break;
+
+            case "/":
+                acumulador /= entrada;
+                break;
+
+            case "**":
+                acumulador **= entrada;
+                break;
+
+            case "s":
+                alert("Saindo");
+                break;
+
+            default:
+                alert("Entrada inválida");
+        }
+
+        alert("Acumulador vale " + acumulador)
+    }
+
+
+</script>
