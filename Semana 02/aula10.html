@@ -1,0 +1,29 @@
+<script>
+    let acumulador = 0;
+    let entrada = 1;
+    let calculo = "";
+
+    while (calculo != "s") {
+        entrada = parseInt(prompt("Informe um valor: "));
+        calculo = prompt("Informe o tipo de cálculo: (+)Somar, (-)Subtrair, (*)Multiplicar, (/)Divisão ou (**)Potenciação o (s) para sair");
+
+        if (calculo== "+") {
+            acumulador += entrada;
+        }
+        else if (calculo == "-") {
+            acumulador -= entrada;
+        }
+        else if (calculo == "*") {
+            acumulador *= entrada;
+        } 
+        else if (calculo == "/") {
+            acumulador /= entrada;
+        }
+        else if (calculo == "**") {
+            acumulador **= entrada;
+        }
+        alert("Acumulador vale " + acumulador)
+    }
+
+
+</script>
