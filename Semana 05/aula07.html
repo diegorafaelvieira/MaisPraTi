@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Este é o título</title>
+
+        <script>
+            function ler() {
+                let entrada = prompt("Entre com um texto");
+                document.getElementById("nome").value = entrada;
+            }
+
+            function escrever() {
+                let entrada =  document.getElementById("nome").value;
+                alert("Você digitou: " + entrada);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 id="h1Principal">Vamos ver formulários</h1>
+
+       
+            <input id="nome">
+            <br><br><button onclick="ler()">Ler</button>
+            <br><br><button onclick="escrever()">Escrever</button>
+       
+    </body>
+</html>
