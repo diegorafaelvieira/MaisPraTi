@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Este é o título</title>
+
+        <script>
+
+            let totalCadastros = 0;
+            let nomes = [];
+            let emails = [];
+            let enderecos = [];
+            let whatsapps = [];
+
+            function criarCadastro() {
+                let nome = document.getElementById("nome").value;
+                let email = document.getElementById("email").value;
+                let endereco = document.getElementById("endereco").value;
+                let whatsapp = document.getElementById("whatsapp").value;
+
+                nomes[totalCadastros] = nome;
+                emails[totalCadastros] =  email;
+                enderecos[totalCadastros] = endereco;
+                whatsapps[totalCadastros] = whatsapp;
+
+                document.getElementById("usuarios").innerHTML += "<p onclick='exibir(" + totalCadastros + ")'>" + nome;
+                 totalCadastros++;   
+
+            }
+
+            function exibir(indice) {
+            document.getElementById("cadastro").innerHTML = "Nome: " + nomes[indice] + "<br>E-mail: " + emails[indice] + "<br>Endreço: " + enderecos[indice] + "<br>Whatsapp: " + whatsapps[indice];
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 id="h1Principal">Vamos ver formulários</h1>
+
+       
+           Nome: <input id="nome"><br><br>
+           E-mail: <input id="email" type="email"><br><br>
+           Endereço: <input id="endereco"><br><br>
+           WhatsApp: <input id="whatsapp"><br><br>
+
+          <button onclick="criarCadastro()">Criar Cadastro</button>
+          
+          <br><br><strong>Usuários</strong>
+          <p id="usuarios"></p>
+        
+          <br><strong>Cadastros</strong>
+          <p id="cadastro"></p> 
+            
+       
+    </body>
+</html>
