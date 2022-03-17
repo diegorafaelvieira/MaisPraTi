@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var v1 =10;
+
+            function teste() {
+                var v1 = 20;
+                console.log(" dentro da função teste: " + v1);
+            }
+
+            teste();
+            console.log(" fora da função teste: " + v1);
+
+            let v2 = 10;
+            if (true) {
+                let v2 = 20;
+                console.log("dentro do if: " + v2);
+            }
+
+            console.log("fora do if: " + v2);
+
+            //let é mais recomendável 
+        </script>
+    </head>
+</html>

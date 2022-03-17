@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            let listaPontos = 
+            [
+                {x:10,y:12},
+                {x:15,y:20},
+                {x:18,y:22}
+            ];
+
+     
+            for(let i = 0; i < listaPontos.length; i++) {
+                console.log("x = " + listaPontos[i].x);
+                console.log("y = " + listaPontos[i].y);
+            }
+
+            let listaCirculos = 
+            [
+                {raio:10,ponto:{x:10,y:12}},
+                {raio:12,ponto:{x:10,y:12}},
+                {raio:10,ponto:{x:10,y:12}}
+            ];
+
+
+            for(let i = 0; i < listaCirculos.length; i++) {
+                console.log("raio = " + listaCirculos[i].raio);
+                console.log("x = " + listaCirculos[i].ponto.x);
+                console.log("y = " + listaCirculos[i].ponto.y);     
+                console.log("------");        
+            }
+
+        </script>
+    </head>
+</html>
