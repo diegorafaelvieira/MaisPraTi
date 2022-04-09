@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+
+            function funcaoUsadaNoForEach(valor) {
+                console.log(valor);
+            }
+
+
+            var array1 = [1,2,3,4];
+            array1.push(9);
+            array1.unshift(0);
+
+            for (let i = 0; i < array1.length; i++) {
+                console.log(array1[i]);
+            }
+
+            console.log("--------------");
+
+
+            array1.forEach(funcaoUsadaNoForEach);
+        </script>
+    </head>
+</html>
+
+
+
+
+
+
+
+
+
+array = [1,2,3,4];
+array.push(9);    //coloca o 9 no final do array
+array.pop();      //retira o último elemento do array
+array.shift();    //retira o 1º elemento do array
+array.unshift(1); //coloca o 1 no começo do array
+
+
+

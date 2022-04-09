@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            function funcaoForEach(valor) {
+                console.log(valor);
+            }
+
+            let estrutura = [
+                [{x:1, y:12},{x:10, y:20},{x:3, y:10}],
+                [{x:14, y:12},{x:1, y:10}],
+                [{x:15, y:17}]
+            ]
+            /*
+            ----------------------
+            1,12
+            10,20
+            3,10
+            ----------------------
+            14,12
+            1,10
+            ----------------------
+            15,17
+            */
+            console.log("FOR NORMAL");
+            for(let i=0; i < estrutura.length; i++) {
+                console.log(estrutura[i]);
+            }
+
+            console.log("FOR EACH");
+            estrutura.forEach(funcaoForEach);
+
+            console.log("FOR OF");
+            for(elemento of estrutura) {
+                console.log(elemento);
+            }
+        </script>
+    </head>
+</html>
