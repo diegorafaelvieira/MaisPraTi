@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+
+            function divisivelPor3(valor) {
+                return ((valor % 3) == 0);
+            }
+
+            function multiplicaTodosPor3(valor) {
+                return valor * 3;
+            }
+
+            function multiplicaTodosElementos(parametro1, parametro2) {
+                return parametro1 * parametro2;
+            }
+
+            let array1 = [1,2,3,4];
+
+            //DESAFIO
+            //incluir o número 5 no final do array
+            //1,2,3,4,5
+            //incluir o número 6 no início do array
+            //6,1,2,3,4,5
+            //criar um novo array,  criar um novo array apenas com os números divisíveis por 3
+            //6,3
+            //multiplicar por 3 todos os elementos do array
+            //18,9
+            //multipilicar todos os elementos do array, um a um 
+            //162
+
+            array1.push(5);
+            console.log(array1);
+
+            array1.unshift(6);
+            console.log(array1);
+
+            let array2 = array1.filter(divisivelPor3);
+            console.log(array2);
+
+            array2 = array2.map(multiplicaTodosPor3);
+            console.log(array2);
+
+            array2 = array2.reduce(multiplicaTodosElementos);
+            console.log(array2);
+
+        </script>
+    </head>
+</html>
