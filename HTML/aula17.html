@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        div#id1 table, div#id1 th, div#id1 td {
+            border: 1px solid black;
+        }
+
+        div#id2 table {
+            border-collapse: collapse; /* Juntar bordas da tabela */
+        }
+
+        div#id2 table, div#id2 th, div#id2 td {
+            border: 1px solid black;
+        }
+
+        div#id3 th, div#id3 td {
+            border: 1px solid black;
+        }
+    </style>
+
+    <body>
+        <div id="id1">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr>
+                    <td>Rodrigo</td>
+                    <td>rodrigo@alfamidia.com.br</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>pedro@alfamidia.com.br</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="id2">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr>
+                    <td>Rodrigo</td>
+                    <td>rodrigo@alfamidia.com.br</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>pedro@alfamidia.com.br</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="id3">
+            <table>
+                <tr>
+                    <th colspan="2">Dados</th> <!-- Juntar colunas / rowspan="2" -> Junta linhas -->
+                </tr>
+                <tr>
+                    <td>Rodrigo</td>
+                    <td>rodrigo@alfamidia.com.br</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>pedro@alfamidia.com.br</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

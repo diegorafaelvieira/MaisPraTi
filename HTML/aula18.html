@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        div {
+            margin: 30px;
+        }
+
+        div#idgeral table, div#idgeral th, div#idgeral td {
+            border: 1px solid black;
+        }
+        div#idgeral table {
+            border-collapse: collapse;
+        }
+
+        div#id2 td {
+            height: 50px;
+            width: 100px;
+            vertical-align: center;
+            text-align: top;
+        }
+
+        div#id3 td {
+            padding: 20px;
+            text-align: center;
+        }
+
+        div#id4 tr:hover { /* Hover-> apenas quando o mouse passa por cima*/
+            background-color: #999;
+        }
+
+        div#id5 tr:nth-child(even) { /* Muda cor linha PAR(odd) ou ÍMPAR(even) */
+            background-color: #999;
+        }
+
+        div#id5 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <body>
+        <div id="idgeral">
+            <div id="id1">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>rodrigo@alfamidia.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>pedro@alfamidia.com.br</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div id="id2">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>rodrigo@alfamidia.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>pedro@alfamidia.com.br</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div id="id3">
+                <table>
+                    <tr>
+                        <th colspan="2">Dados</th> <!-- Juntar colunas / rowspan="2" -> Junta linhas -->
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>rodrigo@alfamidia.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>pedro@alfamidia.com.br</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="id4">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>rodrigo@alfamidia.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>pedro@alfamidia.com.br</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="id5">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>rodrigo@alfamidia.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>pedro@alfamidia.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>rodrigo@alfamidia.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>pedro@alfamidia.com.br</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </body>
+</html>
